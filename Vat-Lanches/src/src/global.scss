@@ -1,0 +1,88 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import '@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+ion-card {
+    text-align: center;
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    padding: 16px;
+    color: #000000;
+  }
+  
+  img {
+    width: 100%;
+    max-height: 200px;
+    object-fit:cover;
+    border-radius: 8px;
+  }
+  
+  ion-card-title{
+    font-size: 20px;
+    font-weight: bold;
+   color: #000000;
+  }
+  
+  ion-card-subtitle {
+    font-size: 16px;
+    color: #000000;
+  }
+  ion-toolbar {
+    --background: #004080;
+    --color: white;
+
+  }
+  ion-footer{
+    background-color: #004080;
+  }
+  ion-button{
+    --background: #53f88a;
+    --color: #004080;
+    --border-radius: 30px;
+  font-weight: bold;
+  
+    --padding-top: 15px;
+    --padding-bottom: 15px;
+
+  }
+  body{   --ion-background-color: #f8dbdb;}
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo-icon {
+    font-size: 2rem;
+    color: #004080;
+  }
+  
+  .logo-text {
+    margin-left: 8px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #004080;
+  }
+  

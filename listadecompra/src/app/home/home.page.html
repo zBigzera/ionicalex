@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ <ion-item>
+    <ion-label>Nome: </ion-label>
+    <ion-input type="text" [(ngModel)]="formulario.nome" placeholder="digite seu nome" ></ion-input>
+    <ion-label>Quantidade: </ion-label>
+    <ion-input type="text" [(ngModel)]="formulario.valor" placeholder="digite a quantidade" ></ion-input>
+  </ion-item>
+  <ion-button expand="block" color="primary" (click)="salvar()">Cadastrar</ion-button>
+  <ion-button expand="block" color="primary" href="pg1">Ver lista</ion-button>
+
+</ion-content>

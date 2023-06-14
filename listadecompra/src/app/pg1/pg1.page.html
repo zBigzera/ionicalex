@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>pg1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ 
+  <ion-list>
+    <ion-item-divider>
+      <ion-label>
+        <h2>Lista de cadastros</h2>
+      </ion-label>
+    </ion-item-divider>
+
+    <ion-item>
+      <ion-label>
+        <h3>Nome</h3>
+      </ion-label>
+      <ion-label>
+        <h3>Quantidade</h3>
+      </ion-label>
+    </ion-item>
+
+    <ion-item *ngFor="let usuario of valor">
+      <ion-label>
+        {{usuario[0]}}
+      </ion-label>
+      <ion-label>
+        {{usuario[1]}}
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="block" color="primary" href="home">Voltar</ion-button>
+  <ion-button expand="block" color="primary" (click)="apagar()">Apagar</ion-button>
+
+</ion-content>

@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Hambúrgueres</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card color='danger' style="text-align: center" *ngFor="let product of lista">
+    <img src="https://aycav.000webhostapp.com/vatlanchesdefinitivo/vatlanchesFINALIZADO/uplouds/Foto{{product.codigoproduto}}.jpg">
+    <ion-card-content>
+      <ion-card-title>
+      {{product.descricao}}
+    </ion-card-title>
+    <ion-card-subtitle>
+        R$ {{ product.preco | number : '1.2-2'}}
+      </ion-card-subtitle>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer style="text-align: center">
+  <ion-toolbar>
+    <ion-button href="encomendas">Faça sua encomenda agora!</ion-button>
+  </ion-toolbar>
+</ion-footer>
+

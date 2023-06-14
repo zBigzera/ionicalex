@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+ <ion-title>Loja Online</ion-title>
+</ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list >
+    <ion-item *ngFor="let item of lista">
+      <ion-label>&nbsp;{{item.produto}}</ion-label>
+      <p>R$ {{item.preco}}</p>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab slot="fixed" horizontal="center" vertical="center">
+    <ion-fab-button color="secondary">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+
+    <ion-fab-list side="start">
+      <ion-fab-button (click)="exibirjs('categoria=Fones De Ouvido')">
+        <ion-icon name="arrow-undo-circle-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button (click)="exibirjs('categoria=Eletrodoméstico')">
+        <ion-icon name="caret-back-circle-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+
+    <ion-fab-list side="end">
+      <ion-fab-button (click)="exibirjs('categoria=Brinquedo')">
+        <ion-icon name="arrow-redo-circle-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button class="tmh" (click)="exibirjs('categoria=Celular')">
+        <ion-icon name="home-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
+ 

@@ -1,0 +1,7 @@
+{
+  "name": "Vat-Lanches",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

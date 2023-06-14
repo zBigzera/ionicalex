@@ -1,0 +1,7 @@
+{
+  "name": "lojaboutiqueblank",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
